@@ -8,18 +8,16 @@ import './index.css';
 function Menu() {
   return (
     <>
-    <Navbar bg="primary" expand="lg" style={{height:'80px',fontSize:'large'}} >
-      <Container>
-        <Navbar.Brand as={Link} to='/pages/geeks' style={{fontSize:'24px',zIndex:'10'}}>The GeekStore</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto " style={{position:'relative',left:'70%'}}>
-            <Nav.Link  as={Link} to='/pages/geeks' style={{margin: '0 50px'}}>Lista</Nav.Link>
-            <Nav.Link  as={Link} to='/pages/geek/new' style={{margin: '0 50px'}}>Nuevo</Nav.Link>
+    <Navbar bg="primary" variant="dark" style={{height:'80px'}}>
+        <Container>
+          <Navbar.Brand as={Link} to='/pages/geeks'style={{left:'0',fontSize:'2rem'}} >The GeekStore</Navbar.Brand>
+          <Nav className="me-auto" style={{position:'relative',left:'50%',fontSize:'2rem'}}>
+            <Nav.Link as={Link} to='/pages/geeks' style={{marginRight:'50px'}}>Lista de productos</Nav.Link>
+            <Nav.Link as={Link} to='/pages/geek/new'>Nuevo producto</Nav.Link>
+           
           </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
     <section>
         <Outlet></Outlet>
     </section>
