@@ -1,9 +1,7 @@
-.layout{
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 80px);
-    width: 100vw;
-    padding: 10px 20px;
-
-    
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  padding: 10px 20px;
 }

@@ -13,13 +13,16 @@ export async function getProductoById(id) {
 
 export async function saveProducto(producto) {
   const id = producto.id;
+  const info = { ...producto };
+  delete info.category;
+  info.categoryId = producto.category;
 
   if (id) {
-    delete producto.id;
-    const response = await axios.put(`${URL}/geeks/${id}`, producto);
+    delete info.id;
+    const response = await axios.patch(`${URL}/geeks/${id}`, info);
     return response.data;
   } else {
-    const response = await axios.post(`${URL}/geeks`, producto);
+    const response = await axios.post(`${URL}/geeks`, info);
     return response.data;
   }
 }

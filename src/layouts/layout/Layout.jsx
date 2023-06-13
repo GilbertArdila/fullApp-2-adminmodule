@@ -1,16 +1,12 @@
-import PropTypes from 'prop-types'
-import './index.css'
+import PropTypes from "prop-types";
 
-const Layout = ({children}) => {
+import "./index.css";
 
-    Layout.propTypes = {
-        children: PropTypes.node.isRequired,
-      }
-  return (
-    <div className='layout' >
-      {children}
-    </div>
-  )
-}
+const Layout = ({ children }) => {
+  Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return <div className="layout">{children}</div>;
+};
 
-export default Layout
+export default Layout;
