@@ -130,7 +130,7 @@ const Edit = () => {
                         ...register("descripcion", {
                           required: true,
                           minLength: 3,
-                          maxLength: 30,
+                          maxLength: 100,
                         }),
                       }
                     : { ...register("descripcion") })}
@@ -149,7 +149,7 @@ const Edit = () => {
                 )}
                 {id === "new" && errors.descripcion?.type === "maxLength" && (
                   <p className="text-danger">
-                    La descripcion debe tener maximo 30 caracteres
+                    La descripcion debe tener maximo 100 caracteres
                   </p>
                 )}
               </Form.Group>
