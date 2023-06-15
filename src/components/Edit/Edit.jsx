@@ -28,6 +28,7 @@ const Edit = () => {
   useEffect(() => {
     searchproduct();
     searchcategory();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const searchproduct = async () => {
