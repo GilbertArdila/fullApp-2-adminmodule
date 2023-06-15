@@ -213,6 +213,7 @@ const Edit = () => {
                   value={geek.category}
                   onChange={(e) => (geek.category = e.target.value)}
                 >
+                  <option value="">Categoria</option>
                   {category.map((category) => (
                     <option key={category.id} value={category.id}>
                       {category.name}
@@ -227,7 +228,7 @@ const Edit = () => {
                 size="lg"
                 style={{ marginRight: "20px" }}
               >
-                <i className="bi bi-check-square">{" Crear"}</i>
+                <i className="bi bi-check-square">{id != 'new'? ' Editar':' Crear'}</i>
               </Button>
 
               <Button
@@ -242,7 +243,7 @@ const Edit = () => {
             </Col>
           </Row>
           {id != "new" ? (
-        <img src={geek.url} alt={geek.name} width="400px" /> 
+        <img src={geek.url} alt={geek.name} style={{maxWidth:'300px',maxHeight:'350px'}} /> 
       ) : (
         null
       )}

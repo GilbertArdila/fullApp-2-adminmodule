@@ -64,11 +64,11 @@ const Home = () => {
           <tr>
             <th style={{ width: "1/10" }}>Nombre</th>
             <th style={{ width: "1/10" }}>Categoria</th>
-            <th style={{ width: "2/10" }}>Descripcion</th>
+            <th style={{ width: "3/10" }}>Descripcion</th>
             <th style={{ width: "1/10" }}>Precio</th>
             <th style={{ width: "1/10" }}>Cantidad</th>
-            <th style={{ width: "2/10" }}>Url</th>
-            <th style={{ width: "2/10" }}></th>
+           
+            <th style={{ width: "3/10" }}></th>
           </tr>
         </thead>
         <tbody>
@@ -79,7 +79,7 @@ const Home = () => {
               <td>{geek.description}</td>
               <td>{geek.price}</td>
               <td>{geek.quantity}</td>
-              <td>{geek.url}</td>
+              
               <td
                 style={{
                   position: "relative",
