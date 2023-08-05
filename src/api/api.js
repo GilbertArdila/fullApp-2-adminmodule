@@ -1,1 +1,1 @@
-export const URL = 'https://fullapp-1-backend-production.up.railway.app/api/v1';
+export const URL = 'https://geekstore-i11c.onrender.com/api/v1';
